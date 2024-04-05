@@ -1,4 +1,4 @@
-# Template DotNet Labs
+# Persistence Patterns Labs
 
 ## Overview
 

@@ -1,0 +1,65 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "PatternsLabs.Repository",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-PatternsLabs.Repository",
+            "program": "${workspaceFolder}/src/PatternsLabs.Repository/bin/Debug/net8.0/PatternsLabs.Repository.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/PatternsLabs.Repository",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/src/PatternsLabs.Repository/Views"
+            }
+        },
+        {
+            "name": "PatternsLabs.DAO",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-PatternsLabs.DAO",
+            "program": "${workspaceFolder}/src/PatternsLabs.DAO/bin/Debug/net8.0/PatternsLabs.DAO.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/PatternsLabs.DAO",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/src/PatternsLabs.DAO/Views"
+            }
+        },
+        {
+            "name": "PatternsLabs.ActiveRecord",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build-PatternsLabs.ActiveRecord",
+            "program": "${workspaceFolder}/src/PatternsLabs.ActiveRecord/bin/Debug/net8.0/PatternsLabs.ActiveRecord.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/PatternsLabs.ActiveRecord",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/src/PatternsLabs.ActiveRecord/Views"
+            }
+        }
+    ]
+}
