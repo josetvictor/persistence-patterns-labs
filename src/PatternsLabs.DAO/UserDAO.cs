@@ -11,19 +11,24 @@ public class UserDAO : IUserDAO
         _con = context;
     }
 
-    public async Task<User?> Get(Guid id)
+    public async Task<object?> Get(Guid id)
     {
-        return await _con.Users.FirstOrDefaultAsync(u => u.Id == id);
+        return await _con.User.FirstOrDefaultAsync(u => u.Id == id);
     }
 
-    public async Task<User> Save(User user)
+    public async Task<IEnumerable<object?>> GetAll()
+    {
+        return await _con.User.ToListAsync();
+    }
+
+    public async Task<object> Save(object user)
     {
         _con.Add(user);
         await _con.SaveChangesAsync();
         return user;
     }
 
-    public async Task<User> Update(User user)
+    public async Task<object> Update(object user)
     {
         _con.Update(user);
         await _con.SaveChangesAsync();

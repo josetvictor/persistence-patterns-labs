@@ -41,25 +41,5 @@
                 "/Views": "${workspaceFolder}/src/PatternsLabs.DAO/Views"
             }
         },
-        {
-            "name": "PatternsLabs.ActiveRecord",
-            "type": "coreclr",
-            "request": "launch",
-            "preLaunchTask": "build-PatternsLabs.ActiveRecord",
-            "program": "${workspaceFolder}/src/PatternsLabs.ActiveRecord/bin/Debug/net8.0/PatternsLabs.ActiveRecord.dll",
-            "args": [],
-            "cwd": "${workspaceFolder}/src/PatternsLabs.ActiveRecord",
-            "stopAtEntry": false,
-            "serverReadyAction": {
-                "action": "openExternally",
-                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
-            },
-            "env": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
-            },
-            "sourceFileMap": {
-                "/Views": "${workspaceFolder}/src/PatternsLabs.ActiveRecord/Views"
-            }
-        }
     ]
 }

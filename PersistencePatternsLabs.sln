@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternsLabs.Repository", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternsLabs.DAO", "src\PatternsLabs.DAO\PatternsLabs.DAO.csproj", "{D879BDFA-5C0D-4E64-B819-7198CFE68596}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatternsLabs.ActiveRecord", "src\PatternsLabs.ActiveRecord\PatternsLabs.ActiveRecord.csproj", "{8686AE29-A726-4AA9-A890-A65534CF1E76}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,14 +26,9 @@ Global
 		{D879BDFA-5C0D-4E64-B819-7198CFE68596}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D879BDFA-5C0D-4E64-B819-7198CFE68596}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D879BDFA-5C0D-4E64-B819-7198CFE68596}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8686AE29-A726-4AA9-A890-A65534CF1E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8686AE29-A726-4AA9-A890-A65534CF1E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8686AE29-A726-4AA9-A890-A65534CF1E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8686AE29-A726-4AA9-A890-A65534CF1E76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CA42EA6F-1C02-4105-8374-8948C4F21AED} = {086223E6-82BA-4B52-8B93-A7CEC0E4BC92}
 		{D879BDFA-5C0D-4E64-B819-7198CFE68596} = {086223E6-82BA-4B52-8B93-A7CEC0E4BC92}
-		{8686AE29-A726-4AA9-A890-A65534CF1E76} = {086223E6-82BA-4B52-8B93-A7CEC0E4BC92}
 	EndGlobalSection
 EndGlobal

@@ -1,5 +1,3 @@
-using System.Data;
-
 namespace PatternsLabs.DAO;
 
 public class UserService
@@ -10,12 +8,17 @@ public class UserService
         _userDAO = new UserDAO(con);
     }
 
-    public Task<User?> GetUser(Guid id)
+    public Task<IEnumerable<object?>> GetAll()
+    {
+        return _userDAO.GetAll();
+    }
+
+    public Task<object?> GetUser(Guid id)
     {
         return _userDAO.Get(id);
     }
 
-    public Task<User> SaveUser(User User)
+    public Task<object> SaveUser(User User)
     {
         var user = new User
         {
@@ -27,18 +30,18 @@ public class UserService
         return _userDAO.Save(user);
     }
 
-    public Task<User> BlockedUser(Guid id)
+    public Task<object> BlockedUser(Guid id)
     {
-        var user = GetUser(id).Result;
+        User user = (User)GetUser(id).Result ?? throw new Exception("Usuario inexistente");
         if (user!.IsBlocked) throw new Exception("Usuario ja bloqueado");
 
         user!.IsBlocked = true;
         return _userDAO.Update(user);
     }
 
-    public Task<User> SetAdmin(Guid id)
+    public Task<object> SetAdmin(Guid id)
     {
-        var user = GetUser(id).Result;
+        var user = (User)GetUser(id).Result ?? throw new Exception("Usuario inexistente");
         if (user!.IsAdmin) throw new Exception("Usuario ja é um administrador");
 
         user!.IsAdmin = true;
