@@ -1,5 +1,3 @@
-using System.Data;
-
 namespace PatternsLabs.Repository;
 
 public class UserService

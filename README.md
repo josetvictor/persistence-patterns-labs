@@ -2,34 +2,31 @@
 
 ## Overview
 
-Learn time: This will template to quickly start new labs or PoCs.
+Learn time: Correctly used DAO and Repository design patterns with c#/.net.
 
 ## Context 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+Project created to build examples of using the DAO and Repository design patterns to demonstrate a post for Linkedin.
 
 ## Key Features
 
- - .NET 7.0
+ - .NET 8.0
  - C#
- - XUnit
- - [Lorem Ipsum](https://loremipsum.io/)
-
- 
-## TODO
-
-- [ ] Lorem ipsum dolor sit amet
+ - DAO
+ - Repository
 
 ## Compatible IDEs
 
 Tested on:
 
 - VS Code
+- Visual Studio IDE
 
 ## Useful commands
 
-From the terminal/shell/command line tool, use the following commands to build, test and run the API.
+**obs:** *You can run the applications using interfaces that debug in vscode or visual studio.*
+
+From the terminal/shell/command line tool, use the following commands to build and run the API.
 
 - ### Build the project
 
@@ -37,15 +34,8 @@ From the terminal/shell/command line tool, use the following commands to build, 
 dotnet build
 ```
 
-- ### Run the tests
-
-```shell
-dotnet test
-```
-
 - ### Run the application
 
 ```shell
-# Run the application which will be listening on port `5099`.
 dotnet run --project <<PROJECT_PATH>>
 ```
